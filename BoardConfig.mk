@@ -28,6 +28,9 @@
 
 LOCAL_PATH := device/motorola/peregrine
 
+#platform
+TARGET_CPU_VARIANT := krait 
+
 #bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
