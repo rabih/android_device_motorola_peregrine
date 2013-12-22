@@ -31,6 +31,9 @@ LOCAL_PATH := device/motorola/peregrine
 #bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
+#fm radio
+BOARD_HAVE_QCOM_FM := true
+
 #TWRP
 DEVICE_RESOLUTION := 720x1280
 

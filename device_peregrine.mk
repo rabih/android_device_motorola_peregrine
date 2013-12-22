@@ -7,6 +7,16 @@ LOCAL_PATH := device/motorola/peregrine
 # peregrine specific overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+#fm radio
+PRODUCT_BOOT_JARS += qcom.fmradio
+
+PRODUCT_PACKAGES += \
+    qcom.fmradio \
+    libqcomfm_jni \
+    FM2 \
+    FMRecord
+
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.peregrine
