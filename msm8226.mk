@@ -96,10 +96,6 @@ PRODUCT_PACKAGES += WCNSS_qcom_wlan_factory_nv.bin
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    bbx \
-    fstab.qcom \
-    gpecheck.sh \
-    gpe-fstab.qcom \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
@@ -116,8 +112,8 @@ PRODUCT_PACKAGES += \
     init.qcom.wifi.sh
 
 # TWRP
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
