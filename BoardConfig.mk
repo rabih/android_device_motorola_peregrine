@@ -24,15 +24,28 @@
 -include device/motorola/msm8226-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/motorola/xt1034/BoardConfigVendor.mk
+-include vendor/motorola/msm8226-common/BoardConfigVendor.mk
 
-LOCAL_PATH := device/motorola/xt1034
+LOCAL_PATH := device/motorola/peregrine
 
 #bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+#BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 #TWRP
 DEVICE_RESOLUTION := 720x1280
 
+BOARD_CUSTOM_BOOTIMG_MK := device/motorola/peregrine/mkbootimg.mk
+BOARD_HAS_NO_MISC_PARTITION := true
+TARGET_RECOVERY_FSTAB := device/motorola/peregrine/rootdir/etc/fstab.qcom
+
+
 # userdata 8GB
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 8589934592
+
+#TWRP
+DEVICE_RESOLUTION := 720x1280
+TW_IGNORE_MAJOR_AXIS_0 := true
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+#TW_CUSTOM_POWER_BUTTON := 107
+
