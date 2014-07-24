@@ -46,4 +46,5 @@
     "repository": "DonkeyCoyote/proprietary_vendor_motorola",
     "target_path": "vendor/motorola",
     "revision": "android-4.4"
+  }
 ]
