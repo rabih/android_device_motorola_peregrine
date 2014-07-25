@@ -1,1 +1,1 @@
-carbon_peregrine-userdebug
+add_lunch_combo carbon_peregrine-userdebug
