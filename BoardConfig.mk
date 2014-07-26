@@ -26,6 +26,8 @@
 # inherit from the proprietary version
 -include vendor/motorola/msm8226-common/BoardConfigVendor.mk
 
+TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
+
 LOCAL_PATH := device/motorola/peregrine
 
 #platform
