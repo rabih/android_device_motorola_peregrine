@@ -1,4 +1,4 @@
-Device configuration for the Moto G (XT1034) (falcon_umts) (Retail US)
-===============================
+Common device configuration for Motorola peregrine
+Moto 4g LTE variant
 
-Copyright 2013 - The CyanogenMod Project
+#Copyright 2013 - The CyanogenMod Project
