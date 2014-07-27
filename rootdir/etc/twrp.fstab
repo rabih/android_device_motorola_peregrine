@@ -4,7 +4,7 @@
 /cache        ext4      /dev/block/platform/msm_sdcc.1/by-name/cache
 /system       ext4      /dev/block/platform/msm_sdcc.1/by-name/system
 /boot         emmc      /dev/block/platform/msm_sdcc.1/by-name/boot
-/recovery     emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery     flags=backup=1;display=Recovery
+/recovery     emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery
 /pds          emmc      /dev/block/platform/msm_sdcc.1/by-name/pds          flags=backup=1;display=PDS
 /utags        emmc      /dev/block/platform/msm_sdcc.1/by-name/utags        flags=backup=1;display=utags
 /persist      emmc      /dev/block/platform/msm_sdcc.1/by-name/persist      flags=backup=1;display=persist
@@ -18,4 +18,3 @@
 /cid          emmc      /dev/block/mmcblk0p25                               flags=backup=1;display=cid
 /external_sd  auto      /dev/block/mmcblk1p1     /dev/block/mmcblk1         flags=display="microSD card";storage;wipeingui;removable
 /usb-otg      auto      /dev/block/sda1   /dev/block/sda                    flags=display="USB OTG";storage;wipeingui;removable
-
