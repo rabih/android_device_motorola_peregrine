@@ -30,7 +30,7 @@ LOCAL_PATH := device/motorola/perergine
 
 BOARD_CUSTOM_BOOTIMG_MK := device/motorola/peregrine/mkbootimg.mk
 BOARD_HAS_NO_MISC_PARTITION := true
-
+TARGET_CUSTOM_DTBTOOL :=  dtbTool
 #TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
 
