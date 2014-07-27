@@ -12,7 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+-USE_CAMERA_STUB := true
 #
 # This file sets variables that control the way modules are built
 # thorughout the system. It should not be used to conditionally
