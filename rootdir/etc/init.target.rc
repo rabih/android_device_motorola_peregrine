@@ -48,6 +48,8 @@ on fs
 
     wait /dev/block/platform/msm_sdcc.1/by-name/persist
     mount ext4 /dev/block/platform/msm_sdcc.1/by-name/persist /persist nosuid nodev barrier=1
+    exec /system/bin/logwrapper /system/bin/mount_ext4.sh cache /dev/block/platform/msm_sdcc.1/by-name/cache /cache
+
 
     wait /dev/block/platform/msm_sdcc.1/by-name/modem
     exec /system/bin/resize2fs /dev/block/platform/msm_sdcc.1/by-name/modem
@@ -113,6 +115,7 @@ service gsiff_daemon /system/bin/gsiff_daemon
    class late_start
    user system
    group gps net_raw
+
 
 service thermal-engine /system/bin/thermal-engine -c /etc/thermal-engine-8226.conf
    class main
