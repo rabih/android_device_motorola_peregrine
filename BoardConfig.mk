@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2014 The CyanogenMod Project
+
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,6 +27,7 @@ TARGET_LIBINIT_DEFINES_FILE := device/motorola/peregrine/init/init_peregrine.c
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 TARGET_KERNEL_CONFIG := msm8926_mmi_defconfig
+TARGET_USES_MOTOROLA_LOG := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
@@ -38,3 +40,16 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 
 # inherit from the proprietary version
 -include vendor/motorola/peregrine/BoardConfigVendor.mk
+
+BOARD_HAVE_QCOM_FM := true
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+
+# Display
+TARGET_USES_C2D_COMPOSITION := true
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/fstab.qcom
+
+# SELinux
