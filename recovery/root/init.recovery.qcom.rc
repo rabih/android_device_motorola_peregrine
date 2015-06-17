@@ -1,0 +1,5 @@
+on init
+    mkdir /firmware
+    mkdir /vendor/firmware
+    mount ext4 /dev/block/platform/msm_sdcc.1/by-name/modem /firmware
+    symlink /firmware/image /vendor/firmware/keymaster
